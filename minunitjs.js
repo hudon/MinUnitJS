@@ -3,9 +3,6 @@ var assert, assertAlmostEqual, runTests, testThat, tests;
 assert = function(value, msg) {
     if (!value) throw msg;
 };
-assertAlmostEqual = function(a, e, msg) {
-    assert(Math.abs(a - e) < 0.00000001, msg);
-};
 tests = [];
 testThat = function(msg, f) {
     tests.push({ test: f, msg: msg });

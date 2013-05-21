@@ -1,6 +1,5 @@
 ## MinUnitJS, inspired by MinUnit
 assert = (value, msg) -> if not value then throw msg
-assertAlmostEqual = (a, e, msg) -> assert Math.abs(a - e) < 0.00000001, msg
 tests = []
 testThat = (msg, f) -> tests.push
       test: f
