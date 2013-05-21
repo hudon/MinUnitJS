@@ -1,4 +1,4 @@
-##/* MinUnitJS, inspired by MinUnit */
+## MinUnitJS, inspired by MinUnit
 assert = (value, msg) -> if not value then throw msg
 assertAlmostEqual = (a, e, msg) -> assert Math.abs(a - e) < 0.00000001, msg
 tests = []
@@ -19,7 +19,7 @@ runTests = ->
 ## Your tests:
 
 testThat '1 is 1', ->
-  assert 1 is 2, 'ERROR: ONE IS NOT ONE'
+  assert 1 is 1, 'ERROR: ONE IS NOT ONE'
 
 runTests()
 
