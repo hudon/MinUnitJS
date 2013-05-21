@@ -2,8 +2,8 @@
 assert = (value, msg) -> if not value then throw msg
 tests = []
 testThat = (msg, f) -> tests.push
-      test: f
-      msg: msg
+  test: f
+  msg: msg
 runTests = ->
   i = 0
   for t in tests
